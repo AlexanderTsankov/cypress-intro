@@ -1,7 +1,7 @@
 describe('Login tests', () => {
 
     beforeEach(() => {
-      cy.visit('http://localhost:8080/login')
+      cy.visit('http://localhost:8080/index.html')
     });
   
     it('enter submit without valid email', () => {
