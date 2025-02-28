@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" data-test-id="login-email" required />
+            <span data-test-id="login-email-error" class="error-message"></span>
+        
+            <label for="password">Password</label>
+            <input type="password" id="password" data-test-id="login-password" required />
+            <span data-test-id="login-password-error" class="error-message"></span>
+        
+            <button type="submit" data-test-id="login-submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
