@@ -1,7 +1,7 @@
 describe('Registration tests', () => {
   
   beforeEach(() => {
-    cy.visit('http://localhost:8080/index.html')
+    cy.visit('http://localhost:8080/')
   });
 
   it('enter submit without valid user name', () => {
